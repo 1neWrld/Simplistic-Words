@@ -15,8 +15,8 @@ scoped_session creates a safe thread
 db_session creates a ready session instance import to app.py
 innit_db efficient to create tables explicitly when starting app rather than imoport
 """
-Session = scoped_session(sessionmaker(bind=engine))
-db_session = Session()
+SessionLocal = scoped_session(sessionmaker(bind=engine))
+db_session = SessionLocal
 
 def init_db():
     import model

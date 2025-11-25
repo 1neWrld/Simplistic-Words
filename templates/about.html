@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+        .about-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 15px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #007bff;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-tag {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .social-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .social-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #6c757d;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>About Me</h1>
+
+        <div class="profile-section">
+            <!-- Optional: Add your profile image -->
+            <!-- <img src="/static/images/profile.jpg" alt="Profile Picture" class="profile-image"> -->
+            <div class="profile-text">
+                <p>
+                    Welcome to my personal blog! I'm a passionate writer and developer who loves sharing
+                    thoughts, experiences, and knowledge with the world. This blog is my space to explore
+                    ideas, document my journey, and connect with like-minded individuals.
+                </p>
+            </div>
+        </div>
+
+        <h2>What I Write About</h2>
+        <p>
+            On this blog, you'll find posts about technology, programming, personal development,
+            and my experiences in the tech industry. I believe in continuous learning and sharing
+            knowledge with the community.
+        </p>
+
+        <h2>My Interests</h2>
+        <div class="skills-list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">Writing</span>
+            <span class="skill-tag">Technology</span>
+            <span class="skill-tag">Learning</span>
+        </div>
+
+        <h2>Why This Blog?</h2>
+        <p>
+            I created this blog to have a personal space where I can express my thoughts freely,
+            share what I'm learning, and hopefully inspire or help others along the way. Every post
+            is written with care and authenticity.
+        </p>
+
+        <h2>Get In Touch</h2>
+        <p>
+            I love connecting with readers and fellow enthusiasts. Feel free to reach out if you'd
+            like to discuss any of the topics I write about or just want to say hello!
+        </p>
+
+        <div class="social-links">
+            <a href="mailto:your.email@example.com">📧 Email</a>
+            <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+            <a href="https://twitter.com/yourusername" target="_blank">🐦 Twitter</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">💼 LinkedIn</a>
+        </div>
+
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
