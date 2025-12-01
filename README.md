@@ -212,7 +212,7 @@ The visual design and layout of this blog were inspired by the clean, minimal ae
 
 **Wandipa Marema**  
 🎓 Computer and Information Sciences  
-💻 Passionate about web development and Python  
+💻 Passionate about Python  
 🌍 GitHub: [@1neWrld](https://github.com/1neWrld)  
 💼 LinkedIn: [Wandipa Marema](https://www.linkedin.com/in/wandipa-marema-b2771a308/)  
 📧 Email: wandipamarema@icloud.com
