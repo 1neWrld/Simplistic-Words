@@ -1,2 +1,8 @@
 Flask
+flask-login
+flask-wtf
+WTForms
+SQLAlchemy
+flask-bcrypt
 gunicorn
+email-validator
