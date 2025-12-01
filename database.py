@@ -8,6 +8,8 @@ class Base(DeclarativeBase):
     pass
 
 # Create engine and connect to SQLite database 'echo=True' see SQL queries
+import os
+db_path = os.environ.get('DATABASE_URL', 'sqlite:///blog.db')
 engine = create_engine('sqlite:///blog.db', echo=True)
 
 """

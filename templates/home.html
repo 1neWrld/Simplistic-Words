@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplistic Words - Personal Blog</title>
+    <title>My Lines of Progress - Personal Blog</title>
     <style>
         * {
             margin: 0;
@@ -32,6 +32,7 @@
             font-size: 18px;
             font-weight: bold;
             color: #333;
+            text-decoration: none;
         }
 
         nav a {
@@ -205,11 +206,15 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">MyLinesofProgress.com</div>
+        <a href="/" class="logo">MyLinesofProgress.com</a>
         <nav>
             <a href="/">Home</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
+            {% if current_user.is_authenticated %}
+                <a href="/post/new">Create Post</a>
+                <a href="/logout">Logout</a>
+            {% else %}
+                <a href="/login">Login</a>
+            {% endif %}
             <a href="/about">About</a>
         </nav>
     </header>
@@ -220,7 +225,7 @@
         <!-- <img src="/static/images/profile.jpg" alt="Profile" class="profile-image"> -->
 
         <h1>My Lines of Progress</h1>
-        <p>Hi there 👋 Welcome to my personal blog where I share and broadcast my thoughts, skils, experiences, and knowledge about , my programming, and life.</p>
+        <p>Hi there 👋 My Name is Wandipa Marema. Welcome to my personal blog where I share and broadcast my thought, skills, experiences, and knowledge about my programming, and life journey.</p>
 
         <!-- Social Links -->
         <div class="social-links">
@@ -251,7 +256,7 @@
             <a href="/category/coding" class="category-tag">Coding</a>
             <a href="/category/web-dev" class="category-tag">Software Development</a>
             <a href="/category/technology" class="category-tag">Drawing</a>
-             <a href="/category/technology" class="category-tag">Everyday thoughts</a>
+            <a href="/category/technology" class="category-tag">Everyday thoughts</a>
         </div>
     </section>
 
@@ -273,15 +278,14 @@
         {% else %}
             <article class="post-card">
                 <h2>No posts yet!</h2>
-                <p class="post-excerpt">Be the first to create a post.</p>
-                <a href="/post/new" class="read-more">Create Your First Post →</a>
+                <p class="post-excerpt">Check back soon for new content.</p>
             </article>
         {% endif %}
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Simplistic Words. <a href="/privacy">Privacy Policy</a>. Powered by Flask</p>
+        <p>© 2025 My Lines of Progress. Powered by Flask</p>
     </footer>
 </body>
 </html>
