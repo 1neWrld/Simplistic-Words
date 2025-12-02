@@ -6,3 +6,4 @@ SQLAlchemy
 flask-bcrypt
 gunicorn
 email-validator
+psycopg2-binary
